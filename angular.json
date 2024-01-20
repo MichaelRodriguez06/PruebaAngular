@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "https:/michaelrodriguez06.github.io/PruebaAngular/",
             "outputPath": "dist/prueba-angular1",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -31,6 +32,7 @@
           },
           "configurations": {
             "production": {
+
               "budgets": [
                 {
                   "type": "initial",
@@ -88,6 +90,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
