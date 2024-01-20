@@ -10,4 +10,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'PruebaAngular1';
+  juan = "juan";
+
+  imprimirAlgo(){
+    console.log(this.juan);
+  }
 }
